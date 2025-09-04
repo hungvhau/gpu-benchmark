@@ -1,4 +1,4 @@
-cuda-samples$ ./bin/x86_64/linux/release/p2pBandwidthLatencyTest
+/cuda-samples$ ./bin/x86_64/linux/release/p2pBandwidthLatencyTest
 [P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
 Device: 0, NVIDIA TITAN RTX, pciBusID: c, pciDeviceID: 0, pciDomainID:0
 Device: 1, NVIDIA TITAN RTX, pciBusID: 42, pciDeviceID: 0, pciDomainID:0

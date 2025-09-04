@@ -7,7 +7,7 @@ GPU 1: NVIDIA TITAN RTX (UUID: GPU-e7ba22fc-ed00-bbc9-dca6-081abe1e90ce)
          Link 1: 25.781 GB/s
 
 
-gpu-benchmark$ nvidia-smi topo -m
+/gpu-benchmark$ nvidia-smi topo -m
         GPU0    GPU1    CPU Affinity    NUMA Affinity   GPU NUMA ID
 GPU0     X      NV2                             N/A
 GPU1    NV2      X                              N/A
