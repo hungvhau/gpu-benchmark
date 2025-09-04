@@ -1,0 +1,48 @@
+cuda-samples$ ./bin/x86_64/linux/release/p2pBandwidthLatencyTest
+[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
+Device: 0, NVIDIA TITAN RTX, pciBusID: c, pciDeviceID: 0, pciDomainID:0
+Device: 1, NVIDIA TITAN RTX, pciBusID: 42, pciDeviceID: 0, pciDomainID:0
+Device=0 CAN Access Peer Device=1
+Device=1 CAN Access Peer Device=0
+
+***NOTE: In case a device doesn't have P2P access to other one, it falls back to normal memcopy procedure.
+So you can see lesser Bandwidth (GB/s) and unstable Latency (us) in those cases.
+
+P2P Connectivity Matrix
+     D\D     0     1
+     0       1     1
+     1       1     1
+Unidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0      1 
+     0 546.33   2.81 
+     1   2.84 548.65 
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0      1 
+     0 469.88  46.90 
+     1  46.93 548.64 
+Bidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0      1 
+     0 545.70   3.48 
+     1   3.41 544.88 
+Bidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0      1 
+     0 546.90  87.84 
+     1  92.72 546.81 
+P2P=Disabled Latency Matrix (us)
+   GPU     0      1 
+     0  15.42 132.85 
+     1 112.10  11.10 
+
+   CPU     0      1 
+     0   9.37  58.69 
+     1  51.74   9.61 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0      1 
+     0  12.88  11.10 
+     1  13.40  12.64 
+
+   CPU     0      1 
+     0  10.30   7.24 
+     1   7.49  10.47 
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.

@@ -1,0 +1,23 @@
+/gpu-benchmark$ nvidia-smi nvlink --status
+GPU 0: NVIDIA TITAN RTX (UUID: GPU-ee0f1ffb-a42c-8258-8884-b2ca1f3916aa)
+         Link 0: 25.781 GB/s
+         Link 1: 25.781 GB/s
+GPU 1: NVIDIA TITAN RTX (UUID: GPU-e7ba22fc-ed00-bbc9-dca6-081abe1e90ce)
+         Link 0: 25.781 GB/s
+         Link 1: 25.781 GB/s
+
+
+gpu-benchmark$ nvidia-smi topo -m
+        GPU0    GPU1    CPU Affinity    NUMA Affinity   GPU NUMA ID
+GPU0     X      NV2                             N/A
+GPU1    NV2      X                              N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
