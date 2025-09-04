@@ -1,0 +1,4 @@
+/gpu-benchmark/nvlink/scripts$ python 02_nvlink_bandwidth_test.py
+Starting bandwidth test...
+Transfer from GPU 0 to GPU 1 took 0.8362 seconds.
+Measured Bandwidth: 37.3730 GB/s

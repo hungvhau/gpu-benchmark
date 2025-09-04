@@ -1,0 +1,17 @@
+/gpu-benchmark/nvlink/scripts$ python 01_nvlink_and_p2p_status_check.py
+PyTorch CUDA version: 12.6
+cuDNN version: 91002
+GPU 0 name: NVIDIA TITAN RTX
+GPU 1 name: NVIDIA TITAN RTX
+Total CUDA devices: 2
+can_device_access_peer(0, 1): True
+Number of GPUs: 2
+NVLink status:
+GPU 0: NVIDIA TITAN RTX (UUID: GPU-ee0f1ffb-a42c-8258-8884-b2ca1f3916aa)
+         Link 0: 25.781 GB/s
+         Link 1: 25.781 GB/s
+GPU 1: NVIDIA TITAN RTX (UUID: GPU-e7ba22fc-ed00-bbc9-dca6-081abe1e90ce)
+         Link 0: 25.781 GB/s
+         Link 1: 25.781 GB/s
+
+P2P between GPU 0 and GPU 1: True
