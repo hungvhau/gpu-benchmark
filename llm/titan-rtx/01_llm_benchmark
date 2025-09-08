@@ -1,0 +1,44 @@
+/gpu-benchmark/llm$ python llm_benchmark.py 
+--------------------------------------------------
+🚀 Benchmarking Model: gpt2
+--------------------------------------------------
+Using device: CUDA (single GPU)
+✅ Model loaded in: 1.36 seconds
+
+--- Benchmark Results ---
+📝 Prompt: 'Hello, my name is'
+📜 Generated Output (50 tokens): ' John. I'm a writer, and I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm...'
+
+--- Performance ---
+⏱️ Total Generation Time: 1.28 s
+⚡ Tokens per Second (TPS): 39.15 tokens/s
+
+--- Hardware Utilization ---
+🧠 Peak CPU Usage: 4.30%
+💾 Peak System RAM Usage: 2317.66 MB
+🎮 VRAM Used for Model: 1165.32 MB
+📈 Additional VRAM for Generation: -5.35 MB
+🔝 Peak VRAM Usage: 1159.96 MB
+--------------------------------------------------
+
+--------------------------------------------------
+🚀 Benchmarking Model: distilgpt2
+--------------------------------------------------
+Using device: CUDA (single GPU)
+✅ Model loaded in: 1.37 seconds
+
+--- Benchmark Results ---
+📝 Prompt: 'Hello, my name is'
+📜 Generated Output (50 tokens): ' J.J.K. Rowling. I am a fan of the series and I am a fan of the series. I am a fan of the series and I am a fan of the series. I am a fan of the series and I am...'
+
+--- Performance ---
+⏱️ Total Generation Time: 0.41 s
+⚡ Tokens per Second (TPS): 121.93 tokens/s
+
+--- Hardware Utilization ---
+🧠 Peak CPU Usage: 3.40%
+💾 Peak System RAM Usage: 2338.58 MB
+🎮 VRAM Used for Model: 1159.96 MB
+📈 Additional VRAM for Generation: 0.00 MB
+🔝 Peak VRAM Usage: 1159.96 MB
+--------------------------------------------------
