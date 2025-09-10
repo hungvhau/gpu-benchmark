@@ -1,0 +1,47 @@
+/gpu-benchmark/llm$ python llm_benchmark.py --models gpt2 microsoft/Phi-3-mini-4k-instruct
+/home/hhau/code/repos/gpu-benchmark/llm/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+--------------------------------------------------
+🚀 Benchmarking Model: gpt2
+--------------------------------------------------
+Using device: CUDA (single GPU)
+✅ Model loaded in: 1.53 seconds
+
+--- Benchmark Results ---
+📝 Prompt: 'Hello, my name is'
+📜 Generated Output (50 tokens): ' John. I'm a writer, and I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm...'
+
+--- Performance ---
+⏱️ Total Generation Time: 0.84 s
+⚡ Tokens per Second (TPS): 59.17 tokens/s
+
+--- Hardware Utilization ---
+🧠 Peak CPU Usage: 8.70%
+💾 Peak System RAM Usage: 1910.61 MB
+🎮 VRAM Used for Model: 767.53 MB
+📈 Additional VRAM for Generation: 28.00 MB
+🔝 Peak VRAM Usage: 795.53 MB
+--------------------------------------------------
+
+--------------------------------------------------
+🚀 Benchmarking Model: microsoft/Phi-3-mini-4k-instruct
+--------------------------------------------------
+Using device: CUDA (single GPU)
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:05<00:00,  2.68s/it]
+✅ Model loaded in: 34.59 seconds
+
+--- Benchmark Results ---
+📝 Prompt: 'Hello, my name is'
+📜 Generated Output (50 tokens): ' John Smith. I'm interested in learning more about the history of the United States. Can you provide me with a brief overview? Certainly, John. The history of the United States is a rich tapestry that spans over...'
+
+--- Performance ---
+⏱️ Total Generation Time: 55.19 s
+⚡ Tokens per Second (TPS): 0.91 tokens/s
+
+--- Hardware Utilization ---
+🧠 Peak CPU Usage: 9.40%
+💾 Peak System RAM Usage: 1466.58 MB
+🎮 VRAM Used for Model: 8147.53 MB
+📈 Additional VRAM for Generation: 22.00 MB
+🔝 Peak VRAM Usage: 8169.53 MB
+--------------------------------------------------
