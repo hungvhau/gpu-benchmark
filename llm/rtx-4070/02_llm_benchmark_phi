@@ -1,0 +1,30 @@
+/gpu-benchmark/llm$ python llm_benchmark.py --models gpt2 microsoft/Phi-3-mini-4k-instruct
+/home/hhau/code/repos/gpu-benchmark/llm/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+--------------------------------------------------
+🚀 Benchmarking Model: gpt2
+--------------------------------------------------
+Using device: CUDA (single GPU)
+✅ Model loaded in: 1.67 seconds
+
+--- Benchmark Results ---
+📝 Prompt: 'Hello, my name is'
+📜 Generated Output (50 tokens): ' John. I'm a writer, and I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm a writer. I'm...'
+
+--- Performance ---
+⏱️ Total Generation Time: 0.72 s
+⚡ Tokens per Second (TPS): 69.38 tokens/s
+
+--- Hardware Utilization ---
+🧠 Peak CPU Usage: 18.40%
+💾 Peak System RAM Usage: 1594.27 MB
+🎮 VRAM Used for Model: 1648.44 MB
+📈 Additional VRAM for Generation: 39.44 MB
+🔝 Peak VRAM Usage: 1687.88 MB
+--------------------------------------------------
+
+--------------------------------------------------
+🚀 Benchmarking Model: microsoft/Phi-3-mini-4k-instruct
+--------------------------------------------------
+Using device: CUDA (single GPU)
+Loading checkpoint shards:   0%|                                                                                       | 0/2 [00:00<?, ?it/s]Killed
